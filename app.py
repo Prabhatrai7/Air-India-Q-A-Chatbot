@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="📄",
     layout="wide"
 )
-API_KEY = "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"
+API_KEY = ""
 os.environ["API_KEY"] = API_KEY
 
 API_KEY = os.getenv("API_KEY") or st.secrets.get("API_KEY", "")
@@ -127,4 +127,5 @@ def main():
         st.rerun()
 
 if __name__ == "__main__":
+
     main()
